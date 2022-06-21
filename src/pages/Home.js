@@ -2,6 +2,9 @@ import React from "react";
 import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom"
 
+//style
+import './Home.css'
+
 export default function Home() {
   const [data, setData] = useState([]);
 
@@ -18,10 +21,10 @@ export default function Home() {
     fetchclubs();
   }, []);
   return (
-    <div>
+    <div className="home">
       <h1>Home</h1>
       {data && data.map((club) => [
-        <div key={club.id}>
+        <div key={club.id} className="card">
           <h2>{club.clubName}</h2>
           <p>{club.trophies}</p>
           <NavLink to="/">...Read More</NavLink>
