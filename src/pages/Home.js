@@ -22,12 +22,12 @@ export default function Home() {
   }, []);
   return (
     <div className="home">
-      <h1>Home</h1>
+      <h1>TOP FIVE EUROPEAN CLUBS</h1>
       {data && data.map((club) => [
         <div key={club.id} className="card">
           <h2>{club.clubName}</h2>
           <p>{club.trophies}</p>
-          <NavLink to="/">...Read More</NavLink>
+          <NavLink to="/">Read More...</NavLink>
         </div>
       ])}
     
