@@ -13,7 +13,7 @@ export default function Home() {
       .then((res) => res.json())
       .then((data) => {
         setData(data);
-        console.log(data);
+        // console.log(data);
       });
   }
 
@@ -27,7 +27,7 @@ export default function Home() {
         <div key={club.id} className="card">
           <h2>{club.clubName}</h2>
           <p>{club.trophies}</p>
-          <NavLink to="/">Read More...</NavLink>
+          <NavLink to={`/clubs/${club.id}`}>Read More...</NavLink>
         </div>
       ])}
     

@@ -25,7 +25,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/about" element={<About />} />
-          {/* <Route path="/club" element={<Club />} /> */}
+          <Route path="/clubs/:id" element={<Club />} />
           <Route path="*" element={<Errorpage />} />
         </Routes>
       </Router>
