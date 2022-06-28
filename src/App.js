@@ -13,6 +13,7 @@ import Contact from "./pages/Contact";
 import Home from "./pages/Home";
 import Errorpage from "./pages/Errorpage";
 import Club from "./pages/Club";
+import Create from "./pages/Create";
 
 //fetchins the data
 const url = " http://localhost:3000/clubs";
@@ -25,6 +26,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/about" element={<About />} />
+          <Route path="/create" element={<Create />} />
           <Route path="/clubs/:id" element={<Club />} />
           <Route path="*" element={<Errorpage />} />
         </Routes>
