@@ -23,6 +23,7 @@ export default function Home() {
   return (
     <div className="home">
       <h1>TOP FIVE EUROPEAN CLUBS</h1>
+      <button>Create a New Club</button>
       {data && data.map((club) => [
         <div key={club.id} className="card">
           <h2>{club.clubName}</h2>
