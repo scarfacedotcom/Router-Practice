@@ -12,8 +12,6 @@ export default function Create() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    console.log(clubName, coach, captain, trophies);
-
     fetch("http://localhost:3000/clubs", {
       method: "POST",
       headers: {

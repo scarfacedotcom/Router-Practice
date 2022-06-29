@@ -1,53 +1,11 @@
 {
   "clubs": [
     {
-      "id": "1",
-      "clubName": "Real Madrid",
-      "coach": "Carlo Ancelotti",
-      "captain": "Benzema",
-      "trophies": "99"
-    },
-    {
-      "id": "2",
-      "clubName": "Barcelona",
-      "coach": "Xavi",
-      "captain": "Pique",
-      "trophies": "0"
-    },
-    {
-      "id": "3",
-      "clubName": "Chelsea",
-      "coach": "Thomas Tuchel",
-      "captain": "kante",
-      "trophies": "25"
-    },
-    {
-      "id": "4",
-      "clubName": "AS Roma",
-      "coach": "Jose Mourihni",
-      "captain": "Modric",
-      "trophies": "46"
-    },
-    {
-      "id": "5",
-      "clubName": "Man Utd",
-      "coach": "Alex Furguson",
-      "captain": "Ronaldo",
-      "trophies": "53"
-    },
-    {
-      "clubName": "Brentford",
-      "coach": "John",
-      "captain": "Max",
-      "trophies": "23",
-      "id": "bu-XL7x"
-    },
-    {
-      "clubName": "LA Galaxy",
-      "coach": "Peter Adaako",
-      "captain": "Lucky",
-      "trophies": "23",
-      "id": "-uXuT0W"
+      "clubName": "united",
+      "coach": "g",
+      "captain": "hyh",
+      "trophies": "44",
+      "id": 1
     }
   ]
 }
