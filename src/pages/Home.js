@@ -24,8 +24,15 @@ export default function Home() {
   }, []);
   return (
     <div className="home">
+       <div className='navbar'>
+        <nav>
+          <NavLink to="/" className="brand">Scar Face</NavLink>
+          <Searchbar />
+          <NavLink to="/create">Add a new club</NavLink>
+        </nav>
+    </div>
       <h1>TOP FIVE EUROPEAN CLUBS</h1>
-      <NavLink to="/Create">Add a new club</NavLink>
+      {/* <NavLink to="/Create" className="create">Add a new club</NavLink> */}
       {data && data.map((club) => [
         <div key={club.id} className="card">
           <h2>{club.clubName}</h2>
