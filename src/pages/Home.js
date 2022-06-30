@@ -1,12 +1,14 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom"
+import Create from "./Create"
 
 //style
 import './Home.css'
 
 export default function Home() {
   const [data, setData] = useState([]);
+
 
   function fetchclubs() {
     fetch("http://localhost:3000/clubs")
@@ -23,7 +25,7 @@ export default function Home() {
   return (
     <div className="home">
       <h1>TOP FIVE EUROPEAN CLUBS</h1>
-      <button>Create a New Club</button>
+      <NavLink to="/Create">Add a new club</NavLink>
       {data && data.map((club) => [
         <div key={club.id} className="card">
           <h2>{club.clubName}</h2>
