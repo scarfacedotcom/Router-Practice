@@ -24,7 +24,7 @@ export default function Create() {
       .then((result) => setTimeout(() => {
         <h1>Thanks </h1>
         navigate('/')
-      }, 2000))
+      }, 1000))
 
       // .then((json) => console.log(json))
       .catch((err) => console.log(err));
