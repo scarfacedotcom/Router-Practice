@@ -1,13 +1,13 @@
-import { useState } from "react";
-import { useNavigate } from 'react-router-dom'
-
+import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
+import Home from "./Home";
 
 export default function Create() {
   const [clubName, setClubName] = useState("");
   const [coach, setCoach] = useState("");
   const [captain, setCaptain] = useState("");
   const [trophies, setTrophies] = useState("");
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -20,9 +20,25 @@ export default function Create() {
 
       body: JSON.stringify({ clubName, coach, captain, trophies }),
     })
-      .then((result) => navigate("/"))
+      // .then((result) => navigate('/'))
+      .then((result) => setTimeout(() => {
+        <h1>Thanks </h1>
+        navigate('/')
+      }, 2000))
+
+      // .then((json) => console.log(json))
       .catch((err) => console.log(err));
   };
+
+  // useEffect(() => {
+  //   if (result) {
+  //     setTimeout(() => {
+  //       <h1>Thanks </h1>
+  //       navigate('/')
+  //     }, 2000);
+  //   }
+  // },[result, navigate])
+
   return (
     <div>
       <form onSubmit={handleSubmit}>
@@ -62,7 +78,7 @@ export default function Create() {
         <label>
           <span>Trophies</span>
           <input
-            type="text"
+            type="number"
             onChange={(e) => setTrophies(e.target.value)}
             value={trophies}
             required
