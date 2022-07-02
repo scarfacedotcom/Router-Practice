@@ -1,39 +1,46 @@
 {
   "clubs": [
     {
-      "clubName": "united",
-      "coach": "g",
-      "captain": "hyh",
-      "trophies": "44",
+      "clubName": "G",
+      "coach": "GR",
+      "captain": "G",
+      "trophies": "5",
       "id": 1
     },
     {
-      "clubName": "vvvz",
-      "coach": "zcv",
-      "captain": "zv",
-      "trophies": "4",
+      "clubName": "r",
+      "coach": "r",
+      "captain": "r",
+      "trophies": "5",
       "id": 2
     },
     {
-      "clubName": "fdd",
-      "coach": "dfad",
-      "captain": "df",
-      "trophies": "4",
+      "clubName": "t",
+      "coach": "t",
+      "captain": "t",
+      "trophies": "6",
       "id": 3
     },
     {
-      "clubName": "scac",
-      "coach": "cc",
-      "captain": "cddsf",
-      "trophies": "5",
+      "clubName": "c",
+      "coach": "c",
+      "captain": "c",
+      "trophies": "4",
       "id": 4
     },
     {
-      "clubName": "eqd",
-      "coach": "eqd",
-      "captain": "ed",
-      "trophies": "4",
+      "clubName": "f",
+      "coach": "f",
+      "captain": "f",
+      "trophies": "5",
       "id": 5
+    },
+    {
+      "clubName": "f",
+      "coach": "f",
+      "captain": "f",
+      "trophies": "6",
+      "id": 6
     }
   ]
 }

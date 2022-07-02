@@ -8,11 +8,12 @@ export default function Create() {
   const [captain, setCaptain] = useState("");
   const [trophies, setTrophies] = useState("");
   const navigate = useNavigate();
+  const url = "http://localhost:3000/clubs"
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    fetch("http://localhost:3000/clubs", {
+    fetch( url, {
       method: "POST",
       headers: {
         "content-type": "application/json",
@@ -22,7 +23,9 @@ export default function Create() {
     })
       // .then((result) => navigate('/'))
       .then((result) => setTimeout(() => {
-        <h1>Thanks </h1>
+        // {Thanks}
+        console.log('Thanks')
+        {url && <div>Thanks</div> }
         navigate('/')
       }, 1000))
 
